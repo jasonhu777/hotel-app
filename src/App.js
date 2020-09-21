@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 import { Route, Switch } from 'react-router-dom'
 
 
@@ -24,8 +24,8 @@ function App() {
         <Route exact component={Error} />
       </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 

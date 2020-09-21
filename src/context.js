@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import items from './data'
-const RoomContext = React.createContext();
+const RoomContext = React.createContext()
 
 class RoomProvider extends Component {
   state = {
@@ -47,7 +47,7 @@ class RoomProvider extends Component {
         image.fields.file.url)
 
       let room = { ...item.fields, images: images, id: id }
-      return room;
+      return room
     })
     return tempItems
   }
@@ -55,7 +55,7 @@ class RoomProvider extends Component {
   getRoom = (slug) => {
     let tempRooms = [...this.state.rooms]
     const room = tempRooms.find(room => room.slug === slug)
-    return room;
+    return room
   }
 
   handleChange = event => {
@@ -105,7 +105,7 @@ class RoomProvider extends Component {
   }
 }
 
-const RoomConsumer = RoomContext.Consumer;
+const RoomConsumer = RoomContext.Consumer
 
 export function withRoomConsumer(Component) {
   return function ConsumerWrapper(props) {

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import defaultBcg from '../images/room-1.jpeg'
 import { Link } from 'react-router-dom'
 import { RoomContext } from '../context'
-import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import StyledHero from '../components/StyledHero'
 
@@ -16,7 +15,7 @@ export default class Singleroom extends Component {
     }
   }
 
-  static contextType = RoomContext;
+  static contextType = RoomContext
   componentDidMount() {
 
   }
@@ -30,7 +29,7 @@ export default class Singleroom extends Component {
       </div>
     }
 
-    const { name, description, capacity, size, price, extras, breakfast, pets, images } = room;
+    const { name, description, capacity, size, price, extras, breakfast, pets, images } = room
     const [mainImg, ...defaulImg] = images
 
     return (
